@@ -44,6 +44,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./docker
+          file: DockerFile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/my-java-app:${{ github.sha }},${{ secrets.DOCKER_USERNAME }}/my-java-app:latest
         # tags: ghcr.io/${{ github.repository }}/app:${{ github.sha }},ghcr.io/${{ github.repository }}/app:latest
