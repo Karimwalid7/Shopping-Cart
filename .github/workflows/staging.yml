@@ -4,6 +4,7 @@ on:
     push:
       branches: 
         - dev 
+        - main
 jobs:
   build-env:
     runs-on: ubuntu-latest
